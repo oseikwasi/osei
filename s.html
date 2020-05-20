@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="scripts.js">
+	</script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<form action="s2.html" method="POST"  >
+		Name : <input type="text" id="fname" size="15"  ><br>
+ 
+ <input type="submit" value="Submit" onclick="sampleFunction()"> 
+</form>
+
+
+<script>
+    function sampleFunction() {
+  
+ var fname = document.getElementById("fname").value;
+ //sessionStorage.setItem('key',fname);
+ localStorage.setItem("l", fname);
+}
+</script>
+
+
+
+
+
+
+
+
+<button type='button'  onclick='getACat(this);' class='btn btn-default'  data-id='" + cat.CatId + "'> <span class='glyphicon glyphicon-edit' />" +
+                "</button>
+</body>
+</html>

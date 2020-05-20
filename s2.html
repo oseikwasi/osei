@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+			 
+            $('#P').val(localStorage.getItem("l"));
+        });
+
+        
+    </script>
+    
+ 
+<script>
+function startup() {
+    
+    document.getElementById('username').value = localStorage.getItem("l");
+}
+
+</script>
+</head>
+<body onload="startup();">
+    <input id="username" type="text"/>  <br><br><br>
+    <input id="P" type="text" /> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

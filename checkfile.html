@@ -1,0 +1,140 @@
+<!DOCTYPE HTML> 
+<html> 
+
+<head> 
+	<title> 
+	JavaScript | Check if input file is empty. 
+	</title> 
+
+	<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+	</script> 
+</head> 
+
+<body style = "text-align:center;"> 
+	
+	<h1 style = "color:green;"> 
+		GeeksForGeeks 
+	</h1> 
+		
+	<p id = "GFG_UP" style = 
+		"font-size: 15px; font-weight: bold;"> 
+	</p> 
+	
+	<input type="file" name="File" id="file" /> 
+	
+	<br><br> 
+	
+	<button onclick = "GFG_Fun()"> 
+		click here 
+	</button> 
+	
+	<p id = "GFG_DOWN" style = 
+		"color:green; font-size: 20px; font-weight: bold;"> 
+	</p> 
+	
+	<script> 
+		var up = document.getElementById('GFG_UP'); 
+		var down = document.getElementById('GFG_DOWN'); 
+		
+		up.innerHTML = "Click on the button to see" 
+					+ " if any file is selected"; 
+		
+		function GFG_Fun() { 
+			if ($('#file')[0].files.length === 0) { 
+				down.innerHTML = "No files selected"; 
+			} else { 
+				down.innerHTML = "Some file is selected"; 
+			} 
+		} 
+	</script> 
+</body> 
+
+</html> 
+
+
+
+
+
+<!DOCTYPE HTML> 
+<html> 
+
+<head> 
+	<meta http-equiv="Content-Type"
+		content="text/html; charset=iso-8859-1" /> 
+	<title>JQuery File Validation</title> 
+	<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"> 
+</script> 
+</head> 
+
+<body> 
+	<input id="file"
+		type="file"
+		name="file" /> 
+	<p id="output"></p> 
+
+	<script type="text/javascript"> 
+		$('#file').on('change', function() { 
+
+			const size = 
+			(this.files[0].size / 1024 / 1024).toFixed(2); 
+
+			if (size > 4 || size < 2) { 
+				alert("File must be between the size of 2-4 MB"); 
+			} else { 
+				$("#output").html('<b>' + 
+				'This file size is: ' + size + " MB" + '</b>'); 
+			} 
+		}); 
+	</script> 
+</body> 
+
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML> 
+<html> 
+
+<head> 
+	<meta http-equiv="Content-Type"
+		content="text/html; charset=iso-8859-1" /> 
+	<title>JQuery File Validation</title> 
+	<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"> 
+</script> 
+</head> 
+
+<body> 
+	<input id="file"
+		type="file"
+		name="file" /> 
+	<p id="output"></p> 
+
+	<script type="text/javascript"> 
+		$('#file').on('change', function() { 
+
+			const size = 
+			(this.files[0].size / 1024 / 1024).toFixed(2); 
+
+			if (size > 4 || size < 2) { 
+				alert("File must be between the size of 2-4 MB"); 
+			} else { 
+				$("#output").html('<b>' + 
+				'This file size is: ' + size + " MB" + '</b>'); 
+			} 
+		}); 
+	</script> 
+</body> 
+
+</html> 

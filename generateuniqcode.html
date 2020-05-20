@@ -1,0 +1,69 @@
+ 
+<!DOCTYPE html>
+<html>
+ 
+   
+
+<script>
+  function addDate(){
+  date = new Date();
+  var month = date.getMonth()+1;
+  var day = date.getDate();
+  var year = date.getFullYear();
+  
+  if (document.getElementById('date').value == ''){
+  document.getElementById('date').value = day + '' + month + '' + year;
+  }
+  }
+  
+  </script>
+ <div id="k" style="display: none;">
+   <input type="text" id="date">
+  
+  <input type="Textbox" id="pwbx" />
+ <input type="Textbox" id="pwbx1" />
+ <input type="Textbox" id="pwbx22" />
+<input type="Textbox" id="pwbx2" />
+</div>
+
+ <script>
+   GetRandoms();
+     function GetRandoms()
+     {
+      var myElement = document.getElementById("pwbx")
+          myElement.value = Math.random().toString(36).substring(8)
+         var myElement = document.getElementById("pwbx1")
+         myElement.value = Math.random().toString(36).substring(7)
+         var myElement2 = document.getElementById("pwbx2")
+        myElement2.value = Math.round(Math.random()*909)
+        var myElement22 = document.getElementById("pwbx22")
+        myElement22.value = Math.round(Math.random()*19)
+     }
+ </script>
+<br>
+<br>
+ 
+
+  <input type="text" id="myText"   >
+
+<p> </p>
+ 
+
+<script>
+function myFunction() {
+var a =document.getElementById("pwbx1").value;
+var b =document.getElementById("pwbx").value;
+var c =document.getElementById("pwbx2").value;
+var d =document.getElementById("pwbx22").value;
+var dt =document.getElementById("date").value;
+  document.getElementById("myText").value =  a+ '' + b + '' + c  + '' + d  + '' + dt;
+}
+
+addDate();
+myFunction();
+</script>
+
+</body>
+</html>
+
+ 
